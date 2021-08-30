@@ -1,7 +1,7 @@
 {
   "name": "@cryptodsyne/sdk",
   "license": "MIT",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "🛠 An SDK for building applications on top of Pancakeswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -14,13 +14,10 @@
     "bsc"
   ],
   "module": "dist/sdk.esm.js",
-  "scripts": {
-    "lint": "tsdx lint src test",
-    "build": "tsdx build",
-    "start": "tsdx watch",
-    "test": "tsdx test",
-    "prepublishOnly": "tsdx build"
+  "publishConfig": {
+    "access": "public"
   },
+  
   "dependencies": {
     "@cryptodsyne/pancake-swap-core": "^0.1.0",
     "big.js": "^5.2.2",
